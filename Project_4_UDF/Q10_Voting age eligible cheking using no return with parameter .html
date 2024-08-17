@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting age eligible cheking using no return with parameter</title>
+</head>
+<body>
+
+     <!--  Voting age eligible cheking using no return with parameter  -->
+
+    <script>
+
+        function votingAge(a){
+            console.log("Your age is: " + a);
+
+            if(a >= 18){
+                console.log("You're eligible for Vote!!");
+            }
+            else{
+                console.log("you're not eligible for vote!!");
+            }
+        }
+
+        
+        let age = parseInt(prompt("Enter your Age: "));
+
+        let ans = votingAge(age);
+
+    </script>
+    
+</body>
+</html>

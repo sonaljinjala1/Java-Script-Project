@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find negetive elements in array.</title>
+</head>
+<body>
+ 
+    <!-- find negetive elements in array. -->
+
+    <script>
+        let size = parseInt(prompt("Enter array size :- "));
+        let arr = [];
+        document.write(`Your Elements :- <br>`);
+        for(let i=0;i<size;i++){
+            arr[i] = parseInt(prompt(`Enter Array[${i}] :- `));
+            document.write(`Array[${i}] := ${arr[i]}<br>`);
+        }
+    
+        document.write(`<br><br>Negative Elements :-&nbsp&nbsp`);
+        for(let i=0;i<size;i++){
+            if(arr[i]<0){
+                document.write(`${arr[i]} , `);
+            }
+        }
+    </script>
+    
+</body>
+</html>

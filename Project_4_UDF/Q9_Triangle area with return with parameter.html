@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle area with return with parameter</title>
+</head>
+<body>
+
+    <!-- Triangle area with return with parameter  -->
+    
+    <script>
+
+        function triangle(a, b, c){
+
+            let sum = a + b + c;
+
+            if(sum  == 180){
+                return "This is a valid Triangle.!!";
+            }
+            else{
+                return "This is not a valid Triangle.!!";
+            }
+        }
+
+        let angle1 = parseInt(prompt("Enter first angel of triangle: "));
+        let angle2 = parseInt(prompt("Enter second angel of triangle: "));
+        let angle3 = parseInt(prompt("Enter third angel of triangle: "));
+
+        let answer = triangle(angle1, angle2, angle3);
+        console.log(answer);
+
+    </script>
+
+</body>
+</html>

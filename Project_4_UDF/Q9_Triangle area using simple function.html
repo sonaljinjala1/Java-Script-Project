@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle area using simple function</title>
+</head>
+<body>
+
+    <!-- triangle area using simple function  -->
+
+    <script>
+
+        function triangle(){
+            let a = parseInt(prompt("Enter first angel of triangle: "));
+            let b = parseInt(prompt("Enter second angel of triangle: "));
+            let c = parseInt(prompt("Enter third angel of triangle: "));
+
+            let sum = a + b + c;
+
+            if(sum  == 180){
+                console.log("This is a valid Triangle.!!");
+            }
+            else{
+                console.log("This is not a valid Triangle.!!");
+            }
+        }
+
+        let answer = triangle();
+
+    </script>
+    
+</body>
+</html>

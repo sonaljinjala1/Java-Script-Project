@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> array descending order sort</title>
+</head>
+
+<body>
+
+    <script>
+        let size = parseInt(prompt("Enter size of array :- "));
+
+        let arr = [];
+        console.log("ALl elements of array :- ");
+        for (let i = 0; i < size; i++) {
+            arr[i] = parseInt(prompt(`Enter Array[${i}] :- `));
+            console.log(arr[i]);
+        }
+
+        for (let i = 0; i < size; i++) {
+            for (let j = i + 1; j < size; j++) {
+                let tmp;
+                if (arr[i] < arr[j]) {
+                    tmp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tmp;
+                }
+            }
+        }
+
+        console.log("Descending order of array :- ");
+        for (let i = 0; i < size; i++) {
+            console.log(arr[i]);
+        }
+    </script>
+
+</body>
+
+</html>

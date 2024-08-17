@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove duplicate element in array</title>
+</head>
+
+<body>
+    <script>
+        let arr = ["apple", "mango",
+            "apple", "orange", "mango", "mango"];
+
+        function removeDuplicates(arr) {
+            let uniqueMap = new Map();
+            arr.forEach(element => {
+                uniqueMap.set(element, null);
+            });
+            return Array.from(uniqueMap.keys());
+        }
+
+        console.log(removeDuplicates(arr));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Insert element in array position wise</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+        let size = parseInt(prompt("Enter size of array :- "));
+    
+        let arr = [];
+        console.log("Your elements :- ");
+        for(let i=0 ; i<size; i++){
+            arr[i] = parseInt(prompt(`Enter array[${i}] :-`));
+            console.log(arr[i]);
+        }
+    
+        let pushElements = parseInt(prompt("Enter size of elements to add :- "));
+        console.log("Elements you added :- ");
+        for(let i=0; i<pushElements; i++){
+            arr[i] = arr.push(parseInt(prompt("Enter element you want to add :- ")));
+            console.log(arr[i]);
+        }
+    
+        console.log("All elements :- ");
+        for(let i=0; i<(size+pushElements); i++){
+            console.log(arr[i]);
+        }
+    </script>
+</body>
+</html>

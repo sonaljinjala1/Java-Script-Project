@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find minummum number in array</title>
+</head>
+<body>
+
+    <!-- find minimum number in array. -->
+
+    <script type="text/javascript">
+        let size = parseInt(prompt("Enter the size of Array: "));
+    
+        let arr = [];
+        let min= 0;
+        for(let i=0; i<size; i++){
+            arr[i] = parseInt(prompt(`Enter the value of [${i}]: `));
+            console.log(`Array[${i}] :- ${arr[i]}`);
+    
+            min = Math.min(`${arr[i]}`);
+        }
+        console.log("Minimum number of array :- " + min);
+    </script>
+    
+</body>
+</html>

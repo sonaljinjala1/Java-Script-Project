@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> find which number is greter in 3 numbers using nested if else  (using no return with parameter)</title>
+</head>
+<body>
+
+    <!-- using no return with parameter -->
+
+    <script>
+        function greatNum(a, b, c){
+
+            document.write("1ST :- " + a + `<br>`);
+            document.write("2ND :- " + b + `<br>`);
+            document.write("3RD :- " + c + `<br>`);
+
+            if(a > b){
+                if(a > c){
+                    console.log("1st number is max.!!");
+                }else{
+                    console.log("3rd number is max.!!");
+                }
+            }else{
+                if(b > c){
+                    console.log("2nd number is max.!!");
+                }else{
+                    console.log("3rd number is max.!!");
+                }
+            }
+
+        }
+
+        
+        let num1 = parseInt(prompt("Enter value of first number: "));
+        let num2 = parseInt(prompt("Enter value of second number: "));
+        let num3 = parseInt(prompt("Enter value of third number: "));
+
+        let ans = greatNum(num1, num2, num3);
+        
+    </script>
+</body>
+</html>

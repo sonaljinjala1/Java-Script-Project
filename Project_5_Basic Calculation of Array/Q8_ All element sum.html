@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> all element sum</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script type="text/javascript">
+    let size = parseInt(prompt("Enter size of array :- "));
+
+    let arr = [];
+
+    console.log("All elements :- ");
+    for (let i = 0; i < size; i++) {
+        arr[i] = parseInt(prompt(`Enter Array[${i}] :- `));
+        console.log(`Array[${i}] :- ${arr[i]}`);
+    }
+
+
+    let sum = 0;
+    for (let i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    console.log(`All Elements  Sum  :-  ${sum} `);
+
+</script>
