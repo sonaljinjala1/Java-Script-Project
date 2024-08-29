@@ -1,0 +1,31 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #d2d2d2;
+}
+
+.container {
+    background-color: #d2d2d2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#productTableBody td {
+    vertical-align: middle;
+}
+
+#productTableBody .btn-danger {
+    padding: 5px 10px;
+}
+.container{
+    max-width: 1340px !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* .product{
+    background-color: #d2d2d2;
+    color: black;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+} */
+
